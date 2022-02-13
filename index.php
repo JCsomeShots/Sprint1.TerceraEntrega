@@ -64,5 +64,25 @@ echo "<p>Per jugar a el 'amagatall' se'ns ha demanat un programa que compti fins
 </section>
 
 
+
+
+<section class="ej03 ex">
+<?php
+echo "<h3>EXERCICI 3</h3>
+<p>Contar con parametros </p>";
+echo "<p>Imagina't que volem que compti fins a un nombre diferent de 10. Programa la funció perquè el final del compte estigui parametritzat.</p>";
+
+  function amagatall2($num){
+    for($i=0; $i<=$num; $i+=2){
+      echo "$i <br/>";
+    }
+  }
+  amagatall2(29);
+  amagatall2(16);
+
+?>
+</section>
+
+
 </body>
 </html>
