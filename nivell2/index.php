@@ -36,6 +36,27 @@ echo "<p>Ens han demanat un llistat de tots els anys on es van produir jocs olí
 </section>
 
 
+<section class="ej02 ex">
+<?php
+echo "<h3>EXERCICI 2</h3>
+      <p>Total a pagar </p>";
+echo "<p>Escriu una funció que determini la quantitat total a pagar per una trucada telefònica d'acord a les següents premisses:</p>
+  <p>Tota crida que duri menys de 3 minuts té un cost de 10 cèntims.</p>
+  <p>Cada minut addicional a partir dels 3 primers és un pas de comptador i costa 5 cèntims.</p>";
+
+  function trucada($num){
+    if($num > 3){
+      $result = ($num - 3)* 5 + 10;
+      echo "El coste de la llamada es de $result céntimos <br/>";
+    }else {
+      echo "El coste de la llamada es de 10 céntimos <br/>";
+    }
+  }
+  trucada(3.2);
+ 
+?>
+</section>
+
 
 </body>
 </html>
