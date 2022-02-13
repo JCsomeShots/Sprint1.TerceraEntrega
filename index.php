@@ -135,5 +135,24 @@ Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.Si la no
 ?>
 </section>
 
+
+<section class="ej06 ex">
+<?php
+echo "<h3>EXERCICI 6</h3>
+<p>Charlie em va mossegar el dit </p>";
+echo "<p>Charlie et mossegarà el dit exactament el 50% del temps.</p>
+  <p>Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari</p>";
+
+  function isBitten($num){
+    // echo $num . "<br/>";
+    if ($num == 1){
+      echo "se muerde";
+    }else {
+      echo "no se muerde";
+    }
+  }
+  isBitten(rand(1,2));
+?>
+</section>
 </body>
 </html>
