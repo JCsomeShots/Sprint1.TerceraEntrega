@@ -46,5 +46,23 @@ edad(325);
 ?>
 </section>
 
+
+<section class="ej02 ex">
+<?php
+echo "<h3>EXERCICI 2</h3>
+<p>Amagatall </p>";
+echo "<p>Per jugar a el 'amagatall' se'ns ha demanat un programa que compti fins a 10. Però la persona que comptarà és una mica tramposa i ho farà comptant de dos en dos. Crea una funció que compti fins a 10, de 2 en 2, mostrant cada número del compte per pantalla.</p>";
+
+  function amagatall(){
+    for($i=0; $i<=10; $i+=2){
+      echo "$i <br/>";
+    }
+  }
+  amagatall()
+
+?>
+</section>
+
+
 </body>
 </html>
