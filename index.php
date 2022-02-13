@@ -100,5 +100,40 @@ echo "<p>Per prevenir oblits a l'utilitzar la nostra meravellosa opció 'amagata
 </section>
 
 
+<section class="ej05 ex">
+<?php
+echo "<h3>EXERCICI 5</h3>
+<p> Grau de un estudiant</p>";
+echo "<p>Escriure una funciò per verificar el grau de un estudiant en d'acord a la nota.</p>
+<p> Condicions</p>
+<p> Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
+Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.Si la nota està entre 33% to 44%, el grau hauria de ser Tercera Divisió. Si la nota és menor a 33%, l'estudiant reprovarà.</p>";
+
+  function promedio($num){
+    if (!(is_numeric($num)) === true){
+    echo "Debe introducir un valor numérico como nota del alumno <br/>";
+   } else if (($num < 0) || ($num > 100)){
+    echo "Debe introducir una nota entre 0 a 100 <br/>";
+   } else if (($num >= 0) && ($num < 33)) {
+    echo "El estudiante ha suspendido <br/>";
+   } else if (($num >= 33) && ($num <= 44)){
+    echo "El estudiante se encuentra en TERCERA división <br/>";
+   } else if (($num >= 45) && ($num <= 59)){
+    echo "El estudiante se encuentra en SEGUNDA división <br/>";
+   }else {
+    echo "El estudiante se encuentra en PRIMERA división <br/>";
+   }
+    
+  }
+  promedio(true);
+  promedio(101);
+  promedio(-1);
+  promedio(0);
+  promedio(33);
+  promedio(45);
+  promedio(60);
+?>
+</section>
+
 </body>
 </html>
