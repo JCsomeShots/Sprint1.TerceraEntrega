@@ -58,5 +58,41 @@ echo "<p>Escriu una funció que determini la quantitat total a pagar per una tru
 </section>
 
 
+<section class="ej03 ex">
+<?php
+echo "<h3>EXERCICI 3</h3>
+      <p>Botiga</p>";
+echo "<p>Imagina que som a una botiga on es ven: </p>
+  <p>Xocolata: 1 euro</p>
+  <p>Xiclets: 0.50 euros</p>
+  <p>Carmels: 1.50 euros</p>
+  <p>Implementa un programa que permeti afegir càlculs a un total de compres d'aquest tipus. Per exemple, que si comprem:</p>
+  <p>2 xocolates, 1 de xiclets i 1 de carmels, tinguem un programa que permeti anar afegint els subtotals a un total, tal que així:</p>
+  <p>funció(2 xocolates) + funció(1 de xiclets) + funció(1 de carmels) = 2 + 0.5 + 1.5</p>";
+  
+  function botiga($totalXocolata , $totalXiclets , $totalCarmels){
+    $Xocolata = 1;
+    $Xiclets = 0.50;
+    $Carmels = 1.50;
+    if((!(is_int($totalXocolata))== true) || (!(is_int($totalXiclets))== true) || (!(is_int($totalCarmels))== true)){
+      echo "la número de artículos deben contener valores enteros <br/>";
+    } else {
+      $resultat = (($Xocolata * $totalXocolata) + ($Xiclets * $totalXiclets) + ($Carmels *  $totalCarmels));
+
+      echo "el valor total de la compra es de: $resultat  Vuelva pronto <br/>";
+    }
+    
+  }
+  // botiga($totalXocolata , $totalXiclets , $totalCarmels);
+  botiga( 2, 1 , 1);
+  botiga (4,1,1);
+  botiga(4.1,1,1);
+  botiga(4,1.6,1);
+  botiga(4,1,1.9);
+
+ 
+?>
+</section>
+
 </body>
 </html>
