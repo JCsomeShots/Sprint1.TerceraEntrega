@@ -82,5 +82,21 @@ edad(325);
     
     ?>
     </section>
+
+
+    <section class="ej04 ex">
+      <?php
+      echo "<h3>EXERCICI 4</h3>
+      <p>Parámetro por defecto </p>";
+      echo "<p>Per prevenir oblits a l'utilitzar la nostra meravellosa opció 'amagatall' establirem un paràmetre per defecte igual a 10 a la funció que s'encarrega de fer aquest compte. </p>";
+      
+        function amagatall3($num){
+          for($i=0; $i<=$num; $i+=2){
+            echo "$i <br/>";
+          }
+        }
+        amagatall3(10);
+      ?>
+      </section>  
 </body>
 </html>
