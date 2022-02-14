@@ -29,25 +29,12 @@ echo "<p>La criba d'Eratóstenes és un algoritme pensat per a trobar nombres pr
   function criba($num){
 
     $div = false;
-    static $positivo;
-
-    function sign($num){
-      if ($num > 0) {
-        return $positivo = 1;
-      } else if ($num < 0){
-        return $positivo = -1;
-      } else {
-        return $positivo = 0;
-      }
-      echo $positivo . "\n";
-    }
-    sign($num);
-    
+  
   
     if(!(is_int($num)) == true){
       echo "Debe ingresar un número <br/>";
     } 
-    else if ($positivo != 1){
+    else if (($num <=> 0) != 1){
       echo "Debe introducir un número positivo <br/>";
     } 
     else if ($num == 0){
@@ -55,24 +42,23 @@ echo "<p>La criba d'Eratóstenes és un algoritme pensat per a trobar nombres pr
     } else if ($num == 1){
       echo "Debe introducir un número diferente de uno <br/>";
     }else{
-      echo "chau";
+        //   for ($i=2; $i < $num; $i++) { 
+        //     if(($num % i) === 0){
+        //       $div = true;
+        //       break;
+        //     }
+        //   }
+
+        //   if ($div == true){ 
+        //     echo "No es primo"; }
+        //   else {
+        //     echo "Si es primo"; }
+        //   }
     }
 
-    //   for ($i=2; $i < $num; $i++) { 
-    //     if(($num % i) === 0){
-    //       $div = true;
-    //       break;
-    //     }
-    //   }
-
-    //   if ($div == true){ 
-    //     echo "No es primo"; }
-    //   else {
-    //     echo "Si es primo"; }
-    //   }
+   
     // }
-    // ******* ojo check gmp_sign(a);
-  }
+   }
   // criba("hola");
   // criba(true);
   criba (400);
